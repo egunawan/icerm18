@@ -11859,6 +11859,16 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="SageDays@ICERM:-Cluster-algebras-and-unitary-friezes">SageDays@ICERM: Cluster algebras and unitary friezes<a class="anchor-link" href="#SageDays@ICERM:-Cluster-algebras-and-unitary-friezes">&#182;</a></h1><p>Emily Gunawan (University of Connecticut)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Outline">Outline<a class="anchor-link" href="#Outline">&#182;</a></h1><ul>
 <li>I. Background: Friezes</li>
 <li>II. Background: Cluster algebras</li>
@@ -11905,7 +11915,7 @@ a&&d\\[-1pt]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span> <span class="n">run</span> <span class="n">attachment</span><span class="o">/</span><span class="n">friezedemo</span><span class="o">.</span><span class="n">py</span>
@@ -11982,7 +11992,7 @@ E.g. Below is a quiver of affine Dynkin type $\widetilde{\mathbb{A}}_{1,2}$, whi
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">Q</span><span class="o">=</span><span class="n">ClusterQuiver</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
@@ -12030,7 +12040,7 @@ E.g. Below is a quiver of affine Dynkin type $\widetilde{\mathbb{A}}_{1,2}$, whi
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">ClusterAlgebra</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
@@ -12046,7 +12056,7 @@ E.g. Below is a quiver of affine Dynkin type $\widetilde{\mathbb{A}}_{1,2}$, whi
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[68]:</div>
+<div class="prompt output_prompt">Out[77]:</div>
 
 
 
@@ -12072,7 +12082,7 @@ E.g. Below is a quiver of affine Dynkin type $\widetilde{\mathbb{A}}_{1,2}$, whi
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">S</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">initial_seed</span><span class="p">()</span>
@@ -12088,7 +12098,7 @@ E.g. Below is a quiver of affine Dynkin type $\widetilde{\mathbb{A}}_{1,2}$, whi
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[69]:</div>
+<div class="prompt output_prompt">Out[78]:</div>
 
 
 
@@ -12116,7 +12126,7 @@ Below, we mutate the initial cluster at vertex $0$ to get a new cluster variable
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">S</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">initial_seed</span><span class="p">()</span>
@@ -12133,7 +12143,7 @@ Below, we mutate the initial cluster at vertex $0$ to get a new cluster variable
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[70]:</div>
+<div class="prompt output_prompt">Out[79]:</div>
 
 
 
@@ -12159,7 +12169,7 @@ Below, we mutate the initial cluster at vertex $0$ to get a new cluster variable
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">ClusterQuiver</span><span class="p">(</span><span class="n">S</span><span class="o">.</span><span class="n">b_matrix</span><span class="p">())</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">fig_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">circular</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -12204,7 +12214,7 @@ Below, we mutate at $1$ after mutating at $0$.</p>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">S</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">initial_seed</span><span class="p">()</span>
@@ -12221,7 +12231,7 @@ Below, we mutate at $1$ after mutating at $0$.</p>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[72]:</div>
+<div class="prompt output_prompt">Out[81]:</div>
 
 
 
@@ -12237,7 +12247,7 @@ Below, we mutate at $1$ after mutating at $0$.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">ClusterQuiver</span><span class="p">(</span><span class="n">S</span><span class="o">.</span><span class="n">b_matrix</span><span class="p">())</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">fig_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">circular</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -12280,7 +12290,7 @@ Below, we mutate at $1$ after mutating at $0$.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">S</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">initial_seed</span><span class="p">()</span>
